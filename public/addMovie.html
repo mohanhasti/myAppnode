@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+
+  <meta name="description" content="My add movie">
+  <meta charset="utf-8">
+  <title>Projector</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/movie.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300"
+
+</head>
+<body>
+  <header class="header">
+    <img class="fleft logo " src=".\images\projector-logo.png" alt="logo" />
+    <nav>
+        <ul class="fright">
+          <li >  <a href="#">HOME</a></li>
+          <li>  <a href="#">Add Movie</a></li>
+        </ul>
+    </nav>
+  </header>
+<div class="clearfix"></div>
+
+  <form class="form_add" action="/sample-action">
+    <h2>Add a movie</h2>
+    <ul>
+      <li><label for="movie-name">Movie Name:</label>
+        <input id="movie-name" type="text" name="movie-name"/>
+      </li>
+
+      <li><label for="release-year">Release Year:</label>
+        <input id="release-year" type="text" name="release-year"/>
+      </li>
+
+      <li>
+        <div class="divide lang_divide">
+          <label for="language">Language</label>
+          <select id="language" name="language">
+            <option value="English">English</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+        </div>
+        <div class="divide">
+          <label for="rating">Rating</label>
+          <select id="rating "name="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </li>
+      <li><label for="thumbnail-url">Thumbnail-URL</label>
+        <input id="thumbnail-url" type="url" name="thumbnail-url"/>
+      </li>
+
+      <li><label for="plot">Plot</label>
+        <br/>
+        <textarea id="plot" name="plot" rows="6" cols="7"></textarea>
+      </li>
+
+      <li><label for="poster-url">Poster-URL</label>
+        <input id="poster-url" type="url" name="poster-url"/>
+      </li>
+
+      <li><label for="cast">Cast</label><br/>
+        <textarea id="cast" name="cast" rows="6" required></textarea>
+      </li>
+
+      <li>
+        <input id="save" type="button"  value="Save"/>
+      </li>
+
+    </ul>
+
+  </form>
+  <footer class="footer">
+    <img class="fright logo" src="./images/projector-logo.png" />
+    <a href="#"><img src="./images/facebook.png" /></a>
+    <a href="#"><img src="./images/instagram.png" /></a>
+    <a href="#"><img src="./images/twitter.png" /></a>
+  </footer>
+
+</body>
+</html>
